@@ -1,8 +1,6 @@
 <template>
   <div class="my-body">
-    <p />
-    项目信息
-    <p />
+    <div style="height: 50px;background-color: aquamarine">项目信息</div>
     <div class="my-content">
       <div @click="toDetails(item)" class="item" v-for="(item, i) in list" :key="i">{{ item }}</div>
     </div>
@@ -35,5 +33,8 @@ export default {
   font-size: 20px;
   padding: 30px;
   background-color: bisque;
+}
+.my-body {
+  height: 90vh;
 }
 </style>
